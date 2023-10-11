@@ -1,7 +1,9 @@
-* { margin: 0;}
+* {margin: 0;}
 
-:root {--whitish: #F9F8FF;
-       --emphase: #c1cafa; /*  #A5B4FC;*/}
+:root {--whitish: #ecf6ff;
+       --emphase: #c1cafa; /*  #A5B4FC;*/
+       --background: linear-gradient(to right,#1b2956, #31478e);
+       --darkshadow: #1F2039;}
 
 a {font-size: 1em;
     color: #242424;
@@ -15,7 +17,8 @@ em {font-style: normal;
 h1 {font-size: 3.5em;
     color: var(--emphase);
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+    text-shadow: 4px 4px var(--darkshadow);}
 
 h2 {color: #1F2039;
     font-size:1.4em;
@@ -31,11 +34,11 @@ ul {font-size: 1em;
     color:var(--whitish);}
 
 /* body {background-color:#1F2039;} */
-body {background: linear-gradient(to right,#1b2956, #253876);}
+body {background: var(--background);}
 
 
 header,
-footer {background-color: white;
+footer {background-color: #ffffff;
         padding: 20px, 50px, 20px,}
 
 
@@ -68,10 +71,9 @@ section {padding: 80px;}
 
 .localdupont {margin-left: 75px;
               margin-top: 30px;
-              box-shadow: 10px 10px #1F2039;
+              box-shadow: 10px 10px var(--darkshadow);
               /* box-shadow: 10px 10px 0px 0px #1F2039; */
-              /* padding: 10px */
-        }
+              /* padding: 10px */}
 
 .blockservices {
         margin-top: 25px;
@@ -81,7 +83,16 @@ section {padding: 80px;}
         justify-content: space-between;
         background-color: rgb(255, 255, 255);}
 
-.comp, .smartp, .electrom, .deplac {width: 48% /* Adjust the width as needed */;
+.comp, .smartp, .electrom, .deplac {width: 48%;
                                     text-align: center;
                                     margin-top: 20px;
                                     /* .roundedcorners {border-radius: 30px;*/}
+.tarifs {display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 150px 150px 150px;
+        gap:20px;
+        }
+
+.gridbox {height: 100px;
+        text-align: center;
+        text-shadow: 2px 2px var(--darkshadow);}
