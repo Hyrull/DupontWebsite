@@ -1,31 +1,37 @@
 * { margin: 0;}
 
+:root {--whitish: #F9F8FF;
+       --emphase: #c1cafa; /*  #A5B4FC;*/}
+
 a {font-size: 1em;
     color: #242424;
     text-decoration: none;}
 a:hover {text-decoration: underline;}
 
 em {font-style: normal;
-    color: #A5B4FC;}
+    color: var(--emphase);}
 
 
 h1 {font-size: 3.5em;
-    color: #A5B4FC;
+    color: var(--emphase);
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;}
 
-h2 {color: #F9F8FF;}
+h2 {color: #1F2039;
+    font-size:1.4em;
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;}
 
 p {font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
-    color: #F9F8FF;}
+    color:var(--whitish);}
 
 ul {font-size: 1em;
     font-family: 'Manrope', sans-serif;
-    color:#F9F8FF;}
+    color:var(--whitish);}
 
-body {background-color:#1F2039;}
-/* body {background: linear-gradient(to right,#000046, #1CB5E0);} */
+/* body {background-color:#1F2039;} */
+body {background: linear-gradient(to right,#1b2956, #253876);}
 
 
 header,
@@ -47,7 +53,7 @@ footer {background-color: white;
 .about {border-right: 1px solid #8e86b5;
         border-bottom: 1px solid #8e86b5;}
 
-.intro {  border-right: 1px solid #8e86b5;
+.intro {border-right: 1px solid #8e86b5;
         border-bottom: 1px solid #8e86b5;
         padding: 50px;
         text-align: center;}
@@ -57,16 +63,25 @@ footer {background-color: white;
 section {padding: 80px;}
 
 .cont1 {display: flex;
-        flex-wrap: wrap;}
+        flex-wrap: wrap;
+        margin-top: 40px;}
 
-.localdupont {margin-left: 75px;}
+.localdupont {margin-left: 75px;
+              margin-top: 30px;
+              box-shadow: 10px 10px #1F2039;
+              /* box-shadow: 10px 10px 0px 0px #1F2039; */
+              /* padding: 10px */
+        }
 
-.services1 {
+.blockservices {
         margin-top: 25px;
+        margin-left: auto;
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-around;}
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);}
 
-.services2 {display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;}
+.comp, .smartp, .electrom, .deplac {width: 48% /* Adjust the width as needed */;
+                                    text-align: center;
+                                    margin-top: 20px;
+                                    /* .roundedcorners {border-radius: 30px;*/}
