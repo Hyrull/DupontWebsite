@@ -1,0 +1,72 @@
+* { margin: 0;}
+
+a {font-size: 1em;
+    color: #242424;
+    text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+em {font-style: normal;
+    color: #A5B4FC;}
+
+
+h1 {font-size: 3.5em;
+    color: #A5B4FC;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;}
+
+h2 {color: #F9F8FF;}
+
+p {font-size: 1.1em;
+    font-family: 'Manrope', sans-serif;
+    color: #F9F8FF;}
+
+ul {font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    color:#F9F8FF;}
+
+body {background-color:#1F2039;}
+/* body {background: linear-gradient(to right,#000046, #1CB5E0);} */
+
+
+header,
+footer {background-color: white;
+        padding: 20px, 50px, 20px,}
+
+
+.icone_reseau:hover {opacity: 0.5;}
+
+.callme {background: linear-gradient(#8e86b5, #acaeed);
+        color:white;
+        font-family: 'Manrope', sans-serif;
+        padding: 6px 20px;
+        border-radius: 50px;}
+
+.callme:hover {background: linear-gradient(#696484, #8788BA);
+                text-decoration: none;}
+
+.about {border-right: 1px solid #8e86b5;
+        border-bottom: 1px solid #8e86b5;}
+
+.intro {  border-right: 1px solid #8e86b5;
+        border-bottom: 1px solid #8e86b5;
+        padding: 50px;
+        text-align: center;}
+
+.intro h2, ul {margin-top: 30px;}
+
+section {padding: 80px;}
+
+.cont1 {display: flex;
+        flex-wrap: wrap;}
+
+.localdupont {margin-left: 75px;}
+
+.services1 {
+        margin-top: 25px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;}
+
+.services2 {display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;}
