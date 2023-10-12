@@ -34,11 +34,14 @@ ul {font-size: 1em;
     color:var(--whitish);}
 
 /* body {background-color:#1F2039;} */
-body {background: var(--background);}
+.cont1,
+.bggradient,
+.tarifs {background: var(--background);}
 
 
 header,
-footer {background-color: #ffffff;
+footer {
+        /* background-color: #ffffff; */
         padding: 20px, 50px, 20px,}
 
 
@@ -67,11 +70,13 @@ section {padding: 80px;}
 
 .cont1 {display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         margin-top: 40px;}
 
 .localdupont {margin-left: 75px;
               margin-top: 30px;
               box-shadow: 10px 10px var(--darkshadow);
+              align-content: flex-end;
               /* box-shadow: 10px 10px 0px 0px #1F2039; */
               /* padding: 10px */}
 
@@ -81,16 +86,25 @@ section {padding: 80px;}
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        background-color: rgb(255, 255, 255);}
+        /* background-color: rgb(255, 255, 255) */
+        ;}
 
 .comp, .smartp, .electrom, .deplac {width: 48%;
                                     text-align: center;
                                     margin-top: 20px;
                                     /* .roundedcorners {border-radius: 30px;*/}
 .tarifs {display: grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 150px 150px 150px;
-        gap:20px;
+        grid-template-columns: 200px 350px 220px;
+        grid-template-rows: 150px 150px 150px 300px 150px 150px;
+        gap:0 100px;
+        justify-content: center;
+        align-items: center;
+        }
+
+.tarifs > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         }
 
 .gridbox {height: 100px;
