@@ -6,9 +6,11 @@
        --darkshadow: #1F2039;}
 
 a {font-size: 1em;
-    color: #242424;
+    /* color: #242424; */
     text-decoration: none;}
 a:hover {text-decoration: underline;}
+
+.contactlink {color:var(--whitish)}
 
 em {font-style: normal;
     color: var(--emphase);}
@@ -94,8 +96,8 @@ section {padding: 80px;}
                                     margin-top: 20px;
                                     /* .roundedcorners {border-radius: 30px;*/}
 .tarifs {display: grid;
-        grid-template-columns: 200px 350px 220px;
-        grid-template-rows: 150px 150px 150px 300px 150px 150px;
+        grid-template-columns: 200px 380px 220px;
+        grid-template-rows: 150px 150px 200px 150px 300px 150px 150px 150px 200px 250px 250px 250px 200px;
         gap:0 100px;
         justify-content: center;
         align-items: center;
