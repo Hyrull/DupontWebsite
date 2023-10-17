@@ -6,7 +6,7 @@
        --darkshadow: #1F2039;}
 
 @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-display: swap;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
@@ -14,18 +14,18 @@
       }
 
 @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-display: swap;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         src: url('fonts/montserrat-v26-latin-regular.woff2') format('woff2');
       }
 @font-face {
-        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-display: swap;
         font-family: 'Pompiere';
         font-style: normal;
         font-weight: 400;
-        src: url('fonts/pompiere-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url('fonts/pompiere-v19-latin-regular.woff2') format('woff2');
       }
 
 a {font-size: 1em;
@@ -55,7 +55,8 @@ h2 {color: #1F2039;
 h3 {color: #dedede;
         font-size:1.4em;
         /* font-family: 'Pompiere', sans-serif; */
-        text-align: center;}
+        text-align: center;
+        text-shadow: 2px 2px var(--darkshadow);}
 
 p {font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
@@ -76,7 +77,7 @@ header {padding: 20px, 20px;}
 footer {background: var(--background);
         padding: 20px, 20px;}
 
-footer p {color: #ecf6ff;
+.footerreverse p {color: var(--darkshadow);
         font-size: 0.93em;
         text-align: right;
         margin-right: 05%;}
@@ -191,7 +192,8 @@ textarea {border-radius: 50px;}
                 font-family: 'Manrope', sans-serif;
                 padding: 6px 20px;
                 border-radius: 50px;
-                margin-top: 20px;}
+                margin-top: 20px;
+                font-size: 1.12em;}
         
 .submitform:hover {background: linear-gradient(#696484, #8788BA);
                         text-decoration: none;}
