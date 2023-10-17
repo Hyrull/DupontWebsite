@@ -5,6 +5,29 @@
        --background: linear-gradient(to right,#1b2956, #31478e);
        --darkshadow: #1F2039;}
 
+@font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/manrope-v15-latin-regular.woff2') format('woff2');
+      }
+
+@font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+      }
+@font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Pompiere';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/pompiere-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      }
+
 a {font-size: 1em;
     /* color: #242424; */
     text-decoration: none;}
@@ -18,14 +41,21 @@ em {font-style: normal;
 
 h1 {font-size: 3.5em;
     color: var(--emphase);
+    /* color: #38B6FF; */
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
     text-shadow: 4px 4px var(--darkshadow);}
 
 h2 {color: #1F2039;
     font-size:1.4em;
-    font-family: 'Monserrat', sans-serif;
+    /* font-family: 'Pompiere', sans-serif; */
     text-align: center;}
+
+    
+h3 {color: #dedede;
+        font-size:1.4em;
+        /* font-family: 'Pompiere', sans-serif; */
+        text-align: center;}
 
 p {font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
@@ -41,10 +71,15 @@ ul {font-size: 1em;
 .tarifs {background: var(--background);}
 
 
-header,
-footer {
-        /* background-color: #ffffff; */
-        padding: 20px, 50px, 20px,}
+header {padding: 20px, 20px;}
+
+footer {background: var(--background);
+        padding: 20px, 20px;}
+
+footer p {color: #ecf6ff;
+        font-size: 0.93em;
+        text-align: right;
+        margin-right: 05%;}
 
 
 .icone_reseau:hover {opacity: 0.5;}
@@ -91,13 +126,17 @@ section {padding: 80px;}
         /* background-color: rgb(255, 255, 255) */
         ;}
 
-.comp, .smartp, .electrom, .deplac {width: 48%;
-                                    text-align: center;
-                                    margin-top: 20px;
-                                    /* .roundedcorners {border-radius: 30px;*/}
+.blockservices > * {width: 48%;
+          text-align: center;
+          margin-top: 20px;
+          /* .roundedcorners {border-radius: 30px;*/
+          font-family: 'Pompiere', sans-serif;
+          font-size: 1.2em;
+        }
+
 .tarifs {display: grid;
         grid-template-columns: 200px 380px 220px;
-        grid-template-rows: 150px 150px 200px 150px 300px 150px 150px 150px 200px 250px 250px 250px 200px;
+        grid-template-rows: 150px 150px 200px 150px 300px 150px 250px 150px 200px 250px 250px 250px 250px;
         gap:0 100px;
         justify-content: center;
         align-items: center;
@@ -112,3 +151,47 @@ section {padding: 80px;}
 .gridbox {height: 100px;
         text-align: center;
         text-shadow: 2px 2px var(--darkshadow);}
+
+nav {display: flex;
+        flex: auto;
+        /* flex-direction: right; */
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;}  
+
+nav a { font-family: 'Montserrat', sans-serif;
+        color:#1F2039;
+        margin-left: 30px;
+        text-decoration: none;
+        font-size: 1.1em;}
+/* nav a:hover {text-decoration: none;} */
+
+form {display: flex;
+        flex-direction: column;
+        margin:auto;
+        width: 50%;
+}
+
+input {padding: 15px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 20px;}
+
+select {padding: 5px;
+        margin-bottom: 20px;
+        border-radius: 20px;}
+
+label {font-family: 'Montserrat', sans-serif;
+        color: #ecf6ff;}
+
+textarea {border-radius: 50px;}
+
+.submitform {background: linear-gradient(#8e86b5, #acaeed);
+                color:white;
+                font-family: 'Manrope', sans-serif;
+                padding: 6px 20px;
+                border-radius: 50px;
+                margin-top: 20px;}
+        
+.submitform:hover {background: linear-gradient(#696484, #8788BA);
+                        text-decoration: none;}

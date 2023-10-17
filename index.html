@@ -2,29 +2,33 @@
 <html lang=fr>
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Réparateur informatique, smartphone et éléctroménager, basé à Ansac-sur-Vienne et mobile dans un rayon de 30km.">
         <title>ETS Dupont</title>
         <link href="style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet"> -->
     </head>
 
-    <body>
-        <header>
-            <nav>
-                 <img src="img/bannercrop.jpg"
+    <header>
+         <nav>
+            <img src="img/bannercrop.jpg"
                  alt="Entreprise Dupont"
-                 title="Entreprise Dupont">
-                 <a href="index.html" class="navlink">Accueil</a>
-                 <a href="a-propos.html" class="navlink">À propos</a>
-                 <a href="tarifs.html" class="navlink">Tarifs</a>
-                <br>
-            </nav>
-        </header>
+                 title="Entreprise Dupont"
+                 class="logodpt">
+            <div>
+                <a href="index.html" class="navlink">Accueil</a>
+                <a href="tarifs.html" class="navlink">Tarifs</a>
+                <a href="contact.html" class="navlink">Contactez-nous</a>
+                <!-- <a href="a-propos.html" class="navlink">À propos</a> -->
+            </div>
+         </nav>
+    </header>
 
+    <body>
         <main>
             <section class="cont1">
-                <div class="presentation">
+                <div id="presentation">
                     <h1>Florian Dupont</h1>
                     <p>Dépanneur informatique et éléctroménager, basé à <em>Ansac-sur-Vienne</em>,
                         et mobile dans un rayon de <em>30 km</em> !</p><br>
@@ -40,19 +44,19 @@
                 <a href="img/ets_dupont_oct23.jpg" alt="Devanture du local de l'entreprise Dupont" target="_blank" title="Entreprise Dupont"><img src="img/ets_dupont_small.jpg" class="localdupont"></a>
             </section>
             <section class ="blockservices">
-                <div class="comp">   
+                <div>   
                     <h2>Réparation informatique</h2><br>
                     <img src="img/ordinateur_small.jpg" alt="Réparation informatique" title="Réparation informatique" class="roundedcorners">
                 </div>
-                <div class="smartp">
+                <div>
                     <h2>Dépannage de smartphones</h2><br>
                     <img src="img/smartphone_small.jpg" alt="Réparation smartphones" title="Réparation smartphones" class="roundedcorners">
                 </div>
-                <div class="electrom">
+                <div>
                     <h2>Réparation éléctroménager</h2><br>
                     <img src="img/electromenager_small.jpg" alt="Dépannage éléctroménager" title="Dépannage éléctroménager" class="roundedcorners">
                 </div>
-                <div class="deplac">
+                <div>
                     <h2>Intervention à domicile</h2><br>
                     <img src="img/camionnettedupont_small.jpg" alt="Intervention à domicile" title="Intervention à domicile" class="roundedcorners">
                 </div>
@@ -60,8 +64,7 @@
         </main>
 
         <footer>
-            <a href="https://www.twitter.com" target="_blank" class="icone_reseau"><img src="img/logos/twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com" target="_blank" class="icone_reseau"><img src="img/logos/instagram.png" alt="Instagram"></a>
+            <p>Site désigné et conçu par Xavier LÉONARD</p>
         </footer>
     </body>
 </html>

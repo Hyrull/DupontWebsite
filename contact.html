@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>ETS Dupont - Contact</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <header>
+        <nav>    
+            <img src="img/bannercrop.jpg"
+            alt="Entreprise Dupont"
+            title="Entreprise Dupont"
+            class="logodpt">
+            <div>
+                <a href="index.html" class="navlink">Accueil</a>
+                <a href="tarifs.html" class="navlink">Tarifs</a>
+                <a href="contact.html" class="navlink">Contactez-nous</a>
+                <!-- <a href="a-propos.html" class="navlink">À propos</a> -->
+            </div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section class="bggradient">
+            <form method="post" action="" class="contactform">
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" required autofocus>
+                <label for="nom">Nom de famille :</label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="email">E-mail :</label>
+                <input type="e-mail" name="mail" id="email" required>
+                <label for="tel">Numéro de téléphone (facultatif) :</label>
+                <input type="tel" name="telephone" id="tel">
+                <label for="objet">Objet de la demande :</label>
+                    <select name="Objet" id="objet" required>
+                        <option value hidden selected disabled>Choisissez une catégorie...</option>
+                        <option value="informatique">Informatique</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="electromenager">Éléctroménager</option>
+                        <option value="divers">Divers</option>
+                    </select>
+                <label for="message">Décrivez votre problème :</label>
+                <textarea name="message" id="message" required></textarea>
+                <input type="submit" value="Envoyer" class="submitform">
+             </form>
+            </main>
+        </body>
+        <footer>
+            <p>Site désigné et conçu par Xavier LÉONARD</p>
+        </footer>
+    </section>
+</html>
