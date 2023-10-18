@@ -44,7 +44,8 @@ h1 {font-size: 3.5em;
     /* color: #38B6FF; */
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
-    text-shadow: 4px 4px var(--darkshadow);}
+    text-shadow: 4px 4px var(--darkshadow);
+}
 
 h2 {color: #1F2039;
     font-size:1.4em;
@@ -67,20 +68,25 @@ ul {font-size: 1em;
     color:var(--whitish);}
 
 /* body {background-color:#1F2039;} */
-.cont1,
+#cont1,
 .bggradient,
 .tarifs {background: var(--background);}
 
 
-header {padding: 20px, 20px;}
+header, footer {padding: 20px 20px;}
 
-footer {background: var(--background);
-        padding: 20px, 20px;}
+footer {background: var(--background);}
+
+footer p {color: white;
+        font-size: 0.93em;
+        text-align: right;
+        margin-right: 05%;}
 
 .footerreverse p {color: var(--darkshadow);
         font-size: 0.93em;
         text-align: right;
-        margin-right: 05%;}
+        margin-right: 05%;
+        padding: 20px 20px;}
 
 
 .icone_reseau:hover {opacity: 0.5;}
@@ -89,7 +95,9 @@ footer {background: var(--background);
         color:white;
         font-family: 'Manrope', sans-serif;
         padding: 6px 20px;
-        border-radius: 50px;}
+        border-radius: 50px;
+        display:inline-block;
+        margin-bottom: 20px;}
 
 .callme:hover {background: linear-gradient(#696484, #8788BA);
                 text-decoration: none;}
@@ -106,10 +114,9 @@ footer {background: var(--background);
 
 section {padding: 80px;}
 
-.cont1 {display: flex;
+#cont1 {display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 40px;}
+        justify-content: space-around;}
 
 .localdupont {margin-left: 75px;
               margin-top: 30px;
@@ -170,8 +177,7 @@ nav a { font-family: 'Montserrat', sans-serif;
 form {display: flex;
         flex-direction: column;
         margin:auto;
-        width: 50%;
-}
+        width: 50%;}
 
 input {padding: 15px;
         border: 1px solid black;
