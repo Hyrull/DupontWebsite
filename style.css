@@ -60,7 +60,7 @@ h3, caption {color: #dedede;
         text-shadow: 2px 2px var(--darkshadow);}
 caption {margin: 25px;}
 
-p, td, th {font-size: 1.1em;
+p {font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
     color:var(--whitish);}
 th {text-decoration: underline;}
@@ -155,7 +155,12 @@ table {border-collapse: collapse;
 td, th {border: 1px solid #4a4c8a;
         padding:10px;
         text-align: center;
-        text-shadow: 2px 2px var(--darkshadow);}
+        max-width: 33%; 
+        text-shadow: 2px 2px var(--darkshadow);
+        font-size: inherit;
+        font-family: 'Manrope', sans-serif;
+        color:var(--whitish);
+        -webkit-text-size-adjust: 100%;}
 
 td:nth-child(3), th:nth-child(3) {
         width: 20%; /* (Column 3 table responsiveness value) */
