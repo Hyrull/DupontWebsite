@@ -53,15 +53,17 @@ h2 {color: #1F2039;
     text-align: center;}
 
     
-h3 {color: #dedede;
+h3, caption {color: #dedede;
         font-size:1.4em;
         font-family: 'Montserrats', sans-serif;
         text-align: center;
         text-shadow: 2px 2px var(--darkshadow);}
+caption {margin: 25px;}
 
-p {font-size: 1.1em;
+p, td, th {font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
     color:var(--whitish);}
+th {text-decoration: underline;}
 
 ul {font-size: 1em;
     font-family: 'Manrope', sans-serif;
@@ -88,7 +90,6 @@ footer p {color: white;
         text-align: right;
         margin-right: 05%;
         padding: 20px 20px;}
-
 
 .icone_reseau:hover {opacity: 0.5;}
 
@@ -152,7 +153,7 @@ section {padding: 80px;}
           font-size: 1.2em;
         }
 
-.tarifs {display: grid;
+/* .tarifs {display: grid;
         grid-template-columns: 200px 380px 220px;
         grid-template-rows: 150px 150px 200px 150px 300px 250px 150px 200px 250px 250px 250px 250px;
         gap:0 100px;
@@ -164,7 +165,12 @@ section {padding: 80px;}
         display: flex;
         align-items: center;
         justify-content: center;
-        }
+        } */
+table {border-collapse: collapse;
+        margin: auto;}
+
+td, th {border: 1px solid #4a4c8a;
+        padding:10px;}
 
 .gridbox {height: 100px;
         text-align: center;
