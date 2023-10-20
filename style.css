@@ -69,13 +69,9 @@ ul {font-size: 1em;
     font-family: 'Manrope', sans-serif;
     color:var(--whitish);}
 
-/* body {background-color:#1F2039;} */
 #cont1,
 .bggradient,
 .tarifs {background: var(--background);}
-
-
-/* header {padding: 10px 10px;} */
 
 footer {background: var(--background);
         padding: 20px 20px;}
@@ -153,24 +149,17 @@ section {padding: 80px;}
           font-size: 1.2em;
         }
 
-/* .tarifs {display: grid;
-        grid-template-columns: 200px 380px 220px;
-        grid-template-rows: 150px 150px 200px 150px 300px 250px 150px 200px 250px 250px 250px 250px;
-        gap:0 100px;
-        justify-content: center;
-        align-items: center;
-        }
-
-.tarifs > * {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        } */
 table {border-collapse: collapse;
         margin: auto;}
 
 td, th {border: 1px solid #4a4c8a;
-        padding:10px;}
+        padding:10px;
+        text-align: center;
+        text-shadow: 2px 2px var(--darkshadow);}
+
+td:nth-child(3), th:nth-child(3) {
+        width: 20%; /* (Column 3 table responsiveness value) */
+        }
 
 .gridbox {height: 100px;
         text-align: center;
