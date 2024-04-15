@@ -39,7 +39,7 @@ em {font-style: normal;
     color: var(--emphase);}
 
 
-h1 {font-size: 3.5em;
+.presentation h1 {font-size: 3.5em;
     color: var(--emphase);
     /* color: #38B6FF; */
     font-family: 'Montserrat', sans-serif;
@@ -63,7 +63,6 @@ caption {margin: 25px;}
 p {font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
     color:var(--whitish);}
-th {text-decoration: underline;}
 
 ul {font-size: 1em;
     font-family: 'Manrope', sans-serif;
