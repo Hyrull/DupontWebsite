@@ -1,4 +1,6 @@
-* {margin: 0;}
+* {
+        margin: 0;
+}
 
 :root {--whitish: #ecf6ff;
        --emphase: #c1cafa; /*  #A5B4FC;*/
@@ -39,7 +41,9 @@ em {font-style: normal;
     color: var(--emphase);}
 
 
-.presentation h1 {font-size: 3.5em;
+.presentation h1,
+.tarifs h1 {
+    font-size: 3.5em;
     color: var(--emphase);
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
@@ -56,6 +60,7 @@ h3, caption {color: #dedede;
         font-family: 'Montserrats', sans-serif;
         text-align: center;
         text-shadow: 2px 2px var(--darkshadow);}
+
 caption {margin: 25px;}
 
 p {font-size: 1.1em;
@@ -141,22 +146,42 @@ section {padding: 80px;}
         padding-bottom: 10px;
 }
 
-table {border-collapse: collapse;
-        margin: auto;}
+.tarifs {
+    border-collapse: collapse;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-td, th {border: 1px solid #4a4c8a;
-        padding:10px;
-        text-align: center;
-        max-width: 33%; 
-        text-shadow: 2px 2px var(--darkshadow);
-        font-size: inherit;
-        font-family: 'Manrope', sans-serif;
-        color:var(--whitish);
-        -webkit-text-size-adjust: 100%;}
+.tarifs h1 {
+        font-size: 2em;
+}
 
-td:nth-child(3), th:nth-child(3) {
-        width: 20%;
-        }
+.table-row {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    margin-bottom: 35px;
+}
+
+.table-row > p:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+}
+
+.tarifs p {
+    text-shadow: 2px 2px var(--darkshadow);
+    font-size: inherit;
+    font-family: 'Manrope', sans-serif;
+    color: var(--whitish);
+    -webkit-text-size-adjust: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--whitish);
+}
 
 .gridbox {height: 100px;
         text-align: center;
@@ -245,5 +270,38 @@ textarea {border-radius: 15px;
                 max-width: 100%;
                 height: auto;
             }
+        .localdupont {
+                margin: 20px 0px;
+        }
 
+        section {
+                padding: 0px;
+        }
+
+        .presentation {
+                padding: 25px
+        }
+
+        .presentation h1 {
+                font-size: 3em;
+        }
+
+        .tarifs,
+        .table-row {
+                padding-left: 15px;
+                padding-right: 15px;
+        }
+
+        .tarifs h1 {
+                margin: 35px;
+        }
+
+        .table-row {
+                grid-template-columns: 1fr;
+        }
+
+        .table-row > p:nth-child(3) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
 }
